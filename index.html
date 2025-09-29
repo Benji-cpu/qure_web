@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuRe - QR Code Lock Screen App</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #ff6029 0%, #faa4d1 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 40px auto;
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding-bottom: 30px;
+            border-bottom: 2px solid #f0f0f0;
+        }
+        
+        h1 {
+            font-size: 3em;
+            color: #ff6029;
+            margin-bottom: 10px;
+        }
+        
+        .tagline {
+            font-size: 1.2em;
+            color: #666;
+        }
+        
+        section {
+            margin-bottom: 40px;
+        }
+        
+        h2 {
+            color: #ff6029;
+            margin-bottom: 15px;
+            font-size: 1.8em;
+        }
+        
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+        
+        .feature {
+            padding: 20px;
+            background: #f8f8f8;
+            border-radius: 10px;
+        }
+        
+        .feature h3 {
+            color: #ff6029;
+            margin-bottom: 10px;
+        }
+        
+        .contact-box {
+            background: #f8f8f8;
+            padding: 30px;
+            border-radius: 10px;
+            text-align: center;
+        }
+        
+        .contact-box p {
+            font-size: 1.1em;
+            margin-bottom: 15px;
+        }
+        
+        .email-link {
+            display: inline-block;
+            background: #ff6029;
+            color: white;
+            padding: 12px 30px;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+        
+        .email-link:hover {
+            background: #e55025;
+        }
+        
+        .faq-item {
+            margin-bottom: 25px;
+            padding: 20px;
+            background: #f8f8f8;
+            border-radius: 10px;
+        }
+        
+        .faq-item h3 {
+            color: #333;
+            margin-bottom: 10px;
+        }
+        
+        footer {
+            text-align: center;
+            padding-top: 30px;
+            margin-top: 40px;
+            border-top: 2px solid #f0f0f0;
+            color: #666;
+        }
+        
+        @media (max-width: 600px) {
+            .container {
+                padding: 20px;
+            }
+            
+            h1 {
+                font-size: 2em;
+            }
+            
+            .tagline {
+                font-size: 1em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>QuRe</h1>
+            <p class="tagline">Transform Your Lock Screen Into a Smart QR Code Display</p>
+        </header>
+        
+        <section>
+            <h2>About QuRe</h2>
+            <p>QuRe makes sharing information effortless by displaying your custom QR code on a beautifully simulated lock screen. No need to unlock your phone or navigate through apps—simply show your screen and let others scan instantly.</p>
+        </section>
+        
+        <section>
+            <h2>Features</h2>
+            <div class="feature-grid">
+                <div class="feature">
+                    <h3>🎨 Beautiful Backgrounds</h3>
+                    <p>Swipe through stunning gradient backgrounds to personalize your lock screen aesthetic.</p>
+                </div>
+                <div class="feature">
+                    <h3>⚡ Quick Access</h3>
+                    <p>Your QR code is always ready to be scanned—no unlocking required.</p>
+                </div>
+                <div class="feature">
+                    <h3>✏️ Easy Editing</h3>
+                    <p>Tap your QR code to instantly edit its content whenever you need.</p>
+                </div>
+                <div class="feature">
+                    <h3>📸 Screenshot & Share</h3>
+                    <p>Capture and share your customized lock screen setup with friends.</p>
+                </div>
+            </div>
+        </section>
+        
+        <section>
+            <h2>Frequently Asked Questions</h2>
+            
+            <div class="faq-item">
+                <h3>How do I create a custom QR code?</h3>
+                <p>Simply tap on the QR code displayed on your lock screen to open the editor. Enter your desired information (URL, contact details, text, etc.) and your QR code will update instantly.</p>
+            </div>
+            
+            <div class="faq-item">
+                <h3>How do I change the background?</h3>
+                <p>Swipe left or right on the background to cycle through our beautiful gradient options. You can also tap the Edit button for more customization options.</p>
+            </div>
+            
+            <div class="faq-item">
+                <h3>What's included in Premium?</h3>
+                <p>Premium users can remove the QuRe branding QR code and unlock additional customization features.</p>
+            </div>
+            
+            <div class="faq-item">
+                <h3>Can I save my customized screen?</h3>
+                <p>Yes! Use the screenshot feature to capture your lock screen setup and share it or save it to your photo library.</p>
+            </div>
+            
+            <div class="faq-item">
+                <h3>Does QuRe work offline?</h3>
+                <p>Yes! Once you've created your QR code, QuRe works completely offline. No internet connection required.</p>
+            </div>
+        </section>
+        
+        <section>
+            <h2>Support</h2>
+            <div class="contact-box">
+                <p>Need help? Have a question? We're here for you!</p>
+                <a href="mailto:mystechcards@gmail.com" class="email-link">Contact Support</a>
+                <p style="margin-top: 20px; font-size: 0.9em; color: #666;">
+                    We typically respond within 24 hours.
+                </p>
+            </div>
+        </section>
+        
+        <footer>
+            <p>&copy; 2025 Ben Hemson-Struthers. All rights reserved.</p>
+            <p style="margin-top: 10px; font-size: 0.9em;">Available on the App Store for iOS</p>
+        </footer>
+    </div>
+</body>
+</html>
